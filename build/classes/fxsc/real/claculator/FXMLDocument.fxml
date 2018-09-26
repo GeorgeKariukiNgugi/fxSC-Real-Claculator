@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="372.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxsc.real.claculator.FXMLDocumentController">
+   <children>
+      <TextField fx:id="field" alignment="CENTER_RIGHT" editable="false" layoutX="42.0" layoutY="59.0" prefHeight="58.0" prefWidth="307.0" text="0.">
+         <font>
+            <Font name="Times New Roman Bold" size="35.0" />
+         </font>
+      </TextField>
+      <Label layoutX="42.0" layoutY="21.0" text="CASIO" textFill="#e10c0c" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="21.0" text="fx-Ms-82" textFill="#e10c0c" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn7" layoutX="17.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleButton7" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="7">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn8" layoutX="104.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleButton8" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="8">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn9" layoutX="186.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleButton9" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="9">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btndevide" layoutX="276.0" layoutY="134.0" mnemonicParsing="false" onAction="#handleDevide" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: lime;" text="/">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn4" layoutX="17.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleButton4" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="4">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn5" layoutX="104.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleButton5" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="5">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn6" layoutX="186.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleButton6" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="6">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnminus" layoutX="276.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleMinus" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: lime;" text="-">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn1" layoutX="17.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleButton1" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="1">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn2" layoutX="104.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleButton2" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="2">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn3" layoutX="186.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleButton3" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="3">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btntimes" layoutX="276.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleTimes" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: lime;" text="*">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn0" layoutX="17.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleButton0" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: magenta;" text="0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnpoint" layoutX="111.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleButtonpoint" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: lime;" text=".">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnadd" layoutX="186.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="41.0" prefWidth="56.0" style="-fx-background-color: lime;" text="+">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleEquals" prefHeight="145.0" prefWidth="80.0" style="-fx-background-color: lime;" text="=">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="70.0" prefWidth="105.0" style="-fx-background-color: blue;" text="CLEAR">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="143.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="70.0" prefWidth="105.0" style="-fx-background-color: blue;" text="EXIT">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="303.0" layoutY="499.0" prefHeight="20.0" prefWidth="70.0" />
+      <Button layoutX="52.0" layoutY="483.0" mnemonicParsing="false" onAction="#handleOperaionDetails" prefHeight="53.0" prefWidth="230.0" style="-fx-background-color: brown;" text="OPERATION DETAILS." textFill="#e8e3e3">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="258.0" layoutY="555.0" mnemonicParsing="false" onAction="#handleButtonOperationDetails" style="-fx-background-color: green;" text="Details.">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
